@@ -4,9 +4,11 @@ C driver for OpenBCI boards.  A work in progress.
 
 ##Building
 
-`./autogen.sh`
-`./configure`
-`make`
+```
+./autogen.sh
+./configure
+make
+```
 
 ##Running
 
@@ -19,14 +21,14 @@ In order to communicate with the board, you currently must `echo` directly to th
 Any other character can be sent, however only certain characters will do things to the board. Check out http://docs.openbci.com/software/01-OpenBCI_SDK for more info.
 
 ##To-Do
-[ ] Redefine the packet structure to be more user friendly, including string data and names for accelerometer data
-[ ] Clean up streaming code to be simpler and more flexible
-[ ] Provide all functions of board
-  [ ] Enumerate functions here
-[x] Fix Address Boundary Error
-[ ] Error handling (what is meant here?)
-[ ] Implement tests
-[ ] Implementations with: Python, Labstreaminglayer, Matlab, Java/Processing
+- [ ] Redefine the packet structure to be more user friendly, including string data and names for accelerometer data
+- [ ] Clean up streaming code to be simpler and more flexible
+- [ ] Provide all functions of board
+  - [ ] Enumerate functions here
+- [x] Fix Address Boundary Error
+- [ ] Error handling (what is meant here?)
+- [ ] Implement tests
+- [ ] Implementations with: Python, Labstreaminglayer, Matlab, Java/Processing
 
 ##Known Bugs
-[ ] Stock board does not reset properly on start and may occasionally begin streaming in a corrupt manner.  Library does not detect this.
+- [ ] Stock board does not reset properly on start and may occasionally begin streaming in a corrupt manner.  Library does not detect this.
