@@ -5,7 +5,6 @@ C driver for OpenBCI boards.  A work in progress.
 ##Building
 
 ```
-./autogen.sh
 ./configure
 make
 ```
