@@ -2,6 +2,8 @@
 
 C driver for OpenBCI boards.  A work in progress.
 
+This branch is about modeling the API off of https://github.com/OpenBCI/OpenBCI_NodeJS/ for consistency.
+
 ##Building
 
 ```
@@ -20,12 +22,15 @@ In order to communicate with the board, you currently must `echo` directly to th
 Any other character can be sent, however only certain characters will do things to the board. Check out http://docs.openbci.com/software/01-OpenBCI_SDK for more info.
 
 ##To-Do
-- [ ] Redefine the packet structure to be more user friendly, including string data and names for accelerometer data
-- [ ] Clean up streaming code to be simpler and more flexible
-- [ ] Provide all functions of board
-  - [ ] Enumerate functions here
-- [x] Fix Address Boundary Error
-- [ ] Error handling (what is meant here?)
+- [ ] Provide primary functions of NodeJS API
+  - [ ] Review https://github.com/OpenBCI/OpenBCI_NodeJS/ SDK information and lay out a rough outline in a header file.
+    - [ ] Constructor
+    - [ ] Methods
+    - [ ] Events (callbacks)
+    - [ ] Properties
+    - [x] Constants are stored in openBCIConstants.js
+  - [ ] Review .js implementation files at above URL with intention of copying some of the implementation.  Enumerate files in a TODO list here to track which have been processed, and how much.
+
 - [ ] Implement tests
 - [ ] Implementations with: Python, Labstreaminglayer, Matlab, Java/Processing
 
