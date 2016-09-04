@@ -2,7 +2,23 @@
 #ifndef OPENBCI_C_H
 #define OPENBCI_C_H
 
-/* Structs */
+enum obci_board_type_t
+{
+    OBCI_BT_DEFAULT = 8; // 8 Channel OpenBCI board (Default)
+    OBCI_BT_DAISY = 16; // 8 Channel board with Daisy Module - 16 Channels
+    OBCI_BT_GANGLION = 4; // 4 Channel board
+};
+
+/* Board optional configuration */
+typedef struct obci_options_t
+{
+    unsigned long baud_rate; /* Baud Rate, defaults to 115200.  Manipulating
+                                this is allowed if firmware on board has been
+                                previously configured. */
+    obci_board_type_t board_type; /* Specifies type of OpenBCI board */
+    int verbose; /* Print out useful debugging events (Default false) */
+} obci_options_t;
+
 //Struct of a packet, to be filled with packet data.
 typedef struct{
   float output[12];

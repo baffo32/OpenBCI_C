@@ -22,6 +22,7 @@ In order to communicate with the board, you currently must `echo` directly to th
 Any other character can be sent, however only certain characters will do things to the board. Check out http://docs.openbci.com/software/01-OpenBCI_SDK for more info.
 
 ##To-Do
+
 - [ ] Provide primary functions of NodeJS API
   - [ ] Review https://github.com/OpenBCI/OpenBCI_NodeJS/ SDK information and lay out a rough outline in a header file.
     - [ ] Constructor
@@ -30,6 +31,10 @@ Any other character can be sent, however only certain characters will do things 
     - [ ] Properties
     - [x] Constants are stored in openBCIConstants.js
   - [ ] Review .js implementation files at above URL with intention of copying some of the implementation.  Enumerate files in a TODO list here to track which have been processed, and how much.
+    - [ ] openBCIBoard.js
+    - [ ] openBCIConstants.js
+    - [ ] openBCISample.js
+    - [ ] openBCISerialFormat
 
 - [ ] Implement tests
 - [ ] Implementations with: Python, Labstreaminglayer, Matlab, Java/Processing
